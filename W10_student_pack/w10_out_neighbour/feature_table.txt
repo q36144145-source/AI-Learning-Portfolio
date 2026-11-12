@@ -1,0 +1,12 @@
+# feature table - TRAINING SESSION ONLY (sessionA). Choose T_TAP_G from amag_max,
+# T_SHAKE_G from amag_std, T_TILT_DPS from gmag_mean. Do not look at the test session.
+feature        still                     tilt                      shake                     tap                       
+               min   median   max        min   median   max        min   median   max        min   median   max        
+amag_mean        0.954   0.955   0.958     1.014   1.043   1.084     1.063   1.154   1.218     0.971   0.977   0.991   
+amag_std         0.002   0.002   0.003     0.093   0.106   0.144     0.157   0.276   0.321     0.094   0.157   0.184   
+amag_max         0.957   0.961   0.965     1.290   1.578   1.923     1.531   2.031   2.333     1.803   2.009   3.104   
+amag_min         0.949   0.950   0.953     0.797   0.859   0.900     0.689   0.754   0.808     0.318   0.656   0.788   
+gmag_mean        3.039   3.115   4.336    54.442 104.687 123.636    37.355  64.033  80.506    21.878  29.662  42.123   
+gmag_max         3.746   3.906   9.990   174.241 292.792 428.058   128.874 161.471 235.992   166.507 234.756 514.742   
+az_std           0.002   0.004   0.009     0.475   0.500   0.571     0.499   0.721   0.821     0.113   0.136   0.187   
+amag_zc         83.000  89.000 100.000     8.000  13.500  32.000    10.000  23.000  33.000    24.000  32.000  34.000   
