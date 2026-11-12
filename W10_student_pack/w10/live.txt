@@ -1,0 +1,180 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x28 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+# who_am_i=0x68 expected=0x68 addr=0x68
+# W10 classify - rule and model, live
+# source=mpu6050 addr=0x68
+# fs_hz=100 window_samples=200 n_feat=8
+# classes=still,tilt,shake,tap
+# accel_cfg=0x08 xl_sens_mg=0.1221 gyro_cfg=0x08 g_sens_mdps=15.2672
+# model_ready=1 model_bytes=704 n_feat=8 n_hid=12 n_cls=4
+# model_provenance=train=mpu6050:sessionA.txt n=32 test=sessionB.txt n=32 epochs=400 seed=0 written=2026-11-12
+# rule T_TAP_G=2.000 T_SHAKE_G=0.150 T_TILT_DPS=30.0
+# columns: L,n,rule,model,p_model,feat_us,rule_us,mlp_us,missed,clipped,f0..f7
+
+>> live window 1 of 20 : do ONE class, and write down which
+>> 3
+>> 2
+>> 1
+>> GO
+>> STOP
+L,1,tap,tap,0.99,229,4,79,0,0,0.978,0.165,2.698,0.745,19.859,151.764,0.113,33.000
+
+>> live window 2 of 20 : do ONE class, and write down which
+>> 3
+>> 2
+>> 1
+>> GO
+>> STOP
+L,2,still,still,1.00,213,3,29,0,0,0.953,0.002,0.958,0.949,3.060,3.163,0.003,93.000
+
+>> live window 3 of 20 : do ONE class, and write down which
+>> 3
+>> 2
+>> 1
+>> GO
+>> STOP
+L,3,shake,shake,0.98,216,3,29,0,0,1.149,0.218,1.820,0.801,66.993,165.398,0.688,30.000
+
+>> live window 4 of 20 : do ONE class, and write down which
+>> 3
+>> 2
+>> 1
+>> GO
+>> STOP
+L,4,tilt,tilt,0.99,214,3,29,0,0,1.028,0.123,1.615,0.698,106.576,364.646,0.546,18.000
+
+>> live window 5 of 20 : do ONE class, and write down which
+>> 3
+>> 2
+>> 1
+>> GO
+>> STOP
+L,5,tap,shake,1.00,216,3,29,0,0,1.153,0.282,2.275,0.535,57.199,152.748,0.725,22.000
+
+>> live window 6 of 20 : do ONE class, and write down which
+>> 3
+>> 2
+>> 1
+>> GO
+>> STOP
+L,6,tap,tap,0.96,214,3,28,0,0,0.978,0.171,2.502,0.749,29.593,152.195,0.139,44.000
+
+>> live window 7 of 20 : do ONE class, and write down which
+>> 3
+>> 2
+>> 1
+>> GO
+>> STOP
+L,7,tilt,tilt,0.97,216,3,29,0,0,1.034,0.117,1.819,0.810,104.890,284.585,0.484,34.000
+
+>> live window 8 of 20 : do ONE class, and write down which
+>> 3
+>> 2
+>> 1
+>> GO
+>> STOP
+L,8,still,still,0.99,213,3,29,0,0,0.951,0.002,0.956,0.946,3.046,3.589,0.005,80.000
+
+>> live window 9 of 20 : do ONE class, and write down which
+>> 3
+>> 2
+>> 1
+>> GO
+>> STOP
+L,9,still,still,1.00,216,3,30,0,0,0.951,0.002,0.959,0.942,3.101,5.040,0.003,98.000
+
+>> live window 10 of 20 : do ONE class, and write down which
+>> 3
+>> 2
+>> 1
+>> GO
+>> STOP
+L,10,tap,shake,1.00,214,2,29,0,0,1.167,0.276,2.089,0.704,77.209,180.987,0.771,28.000
+
+>> live window 11 of 20 : do ONE class, and write down which
+>> 3
+>> 2
+>> 1
+>> GO
+>> STOP
+L,11,still,tap,0.98,216,3,29,0,0,0.976,0.085,1.674,0.639,29.457,204.652,0.133,34.000
+
+>> live window 12 of 20 : do ONE class, and write down which
+>> 3
+>> 2
+>> 1
+>> GO
+>> STOP
+L,12,tilt,tilt,0.98,214,3,28,0,0,1.025,0.115,1.740,0.834,100.801,314.968,0.484,16.000
+
+>> live window 13 of 20 : do ONE class, and write down which
+>> 3
+>> 2
+>> 1
+>> GO
+>> STOP
+L,13,tilt,tilt,0.93,216,3,30,0,0,1.007,0.083,1.241,0.800,92.183,254.424,0.435,22.000
+
+>> live window 14 of 20 : do ONE class, and write down which
+>> 3
+>> 2
+>> 1
+>> GO
+>> STOP
+L,14,tap,tap,1.00,214,3,28,0,0,0.981,0.139,2.210,0.460,18.255,150.560,0.145,26.000
+
+>> live window 15 of 20 : do ONE class, and write down which
+>> 3
+>> 2
+>> 1
+>> GO
+>> STOP
+L,15,still,still,0.99,215,3,30,0,0,0.950,0.001,0.953,0.946,3.098,3.501,0.003,88.000
+
+>> live window 16 of 20 : do ONE class, and write down which
+>> 3
+>> 2
+>> 1
+>> GO
+>> STOP
+L,16,tap,shake,0.98,214,3,29,0,0,1.142,0.280,2.888,0.774,74.844,211.250,0.680,23.000
+
+>> live window 17 of 20 : do ONE class, and write down which
+>> 3
+>> 2
+>> 1
+>> GO
+>> STOP
+L,17,tap,shake,0.99,216,3,29,0,0,1.133,0.277,2.312,0.788,65.754,198.060,0.677,17.000
+
+>> live window 18 of 20 : do ONE class, and write down which
+>> 3
+>> 2
+>> 1
+>> GO
+>> STOP
+L,18,still,still,1.00,213,3,29,0,0,0.950,0.002,0.955,0.945,3.079,3.304,0.003,106.000
+
+>> live window 19 of 20 : do ONE class, and write down which
+>> 3
+>> 2
+>> 1
+>> GO
+>> STOP
+L,19,tilt,tilt,0.98,216,3,29,0,0,1.011,0.126,1.707,0.819,109.502,317.584,0.517,15.000
+
+>> live window 20 of 20 : do ONE class, and write down which
+>> 3
+>> 2
+>> 1
+>> GO
+>> STOP
+L,20,tap,tap,0.98,214,2,29,0,0,0.973,0.199,2.184,0.657,25.256,161.016,0.137,31.000
+# done live_windows=20
