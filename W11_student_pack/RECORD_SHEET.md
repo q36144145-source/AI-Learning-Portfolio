@@ -2,7 +2,7 @@
 
 > **Correction, 11 Nov 2026 — replaces the 14 Oct note.** **RAM reproduces exactly; Flash does not, and the reason is now measured.** The Arduino framework compiles the full path of its own source files into the binary, and that path runs through your user folder (`C:\Users\<name>\.platformio\…`). So Flash changes with the **length of your Windows username** — not with your project folder, which the 14 Oct note tested correctly but generalised too far from. Measured 11 Nov 2026: the same sketch built through a PlatformIO path 28 characters shorter came out 128 bytes smaller in Flash, with RAM unchanged. **A RAM difference is a signal; a Flash difference of tens of bytes is your username.**
 
-**Name** 陳竑勳  **Student ID** Q36144145  **Date** 2026-11-26（線上週；在 25 Nov 期限之後才完成）
+**Name** 陳竑勳  **Student ID** Q36144145  **Date** 2026-11-26（文件寫 19 Nov；課程實際改在 26 Nov 進行，在家完成）
 
 Every cell below is measured by you, in this room, today. **There is no reference answer
 on any slide in this deck, and none in this folder.** If a cell is empty at 12:00, say
@@ -238,7 +238,7 @@ If anything about your run differed from that (a `cpu_mhz` other than 240, a ref
 tier, a reduced SRAM working set), say so here:
 
 > 和上面的方法相同：`cpu_mhz = 240`，沒有任何 tier 或測試被拒絕，SRAM 的 working set 是完整的 128 KB（`sram_words = 32768`），三個 run 的 `report.py` 都是 `VERDICT valid`。
-> 不同的地方：(1) Run 3 的 log 抓到兩個 report block，第一個是燒錄完自動跑的，第二個是我按 RST 跑的。兩個除了位址和 checksum 之外完全相同，我只用第二個（`w11/run3-sparse.txt`），原始 log 保留為 `w11/run3-sparse_raw-two-blocks.txt`。(2) 這台電腦的 Windows 應用程式控制擋住了 `pio.exe`，build、上傳和 monitor 都改用 `penv\Scripts\python.exe -m platformio`，monitor 加了 `--dtr 0 --rts 0`，所以每個 run 都是我手動按 RST 開始。(3) 這週是線上週，實驗在 2026-11-26 完成，晚於 25 Nov 的期限。
+> 不同的地方：(1) Run 3 的 log 抓到兩個 report block，第一個是燒錄完自動跑的，第二個是我按 RST 跑的。兩個除了位址和 checksum 之外完全相同，我只用第二個（`w11/run3-sparse.txt`），原始 log 保留為 `w11/run3-sparse_raw-two-blocks.txt`。(2) 這台電腦的 Windows 應用程式控制擋住了 `pio.exe`，build、上傳和 monitor 都改用 `penv\Scripts\python.exe -m platformio`，monitor 加了 `--dtr 0 --rts 0`，所以每個 run 都是我手動按 RST 開始。(3) pack 文件寫的是 19 Nov 上課、25 Nov 截止，但課程實際改在 2026-11-26 進行，改成在家完成，實驗在當天做完。
 
 ## 8 · Judgement (one sentence, required)
 
