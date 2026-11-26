@@ -1,0 +1,103 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x29 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+
+=== W11 REPORT ===
+sketch               = 1_hierarchy
+cpu_mhz              = 240
+repeats              = 5
+spread_max_pct       = 25
+min_cycles           = 20000
+dcache_bytes         = 32768
+line_bytes           = 32
+psram_found_api      = 1
+psram_bytes          = 8388607
+internal_largest     = 335860
+words_128k           = 32768
+words_1m             = 262144
+pin_refused          = GPIO35: wired to the octal PSRAM on this module (psram_bytes=8388607), not driven
+pin_2                = driven
+malloc_2k_tier       = SRAM
+malloc_64k_tier      = PSRAM
+sram_words = 32768
+sram_addr = 0x3FC97090
+sram_tier = SRAM
+sram_balance = ok
+sram_seq_status = ok
+sram_seq_ns_per_item = 29.41
+sram_seq_first_ns_per_item = 29.48
+sram_seq_spread_pct = 0.0
+sram_seq_checksum = 0xDB4BD000
+sram_rand_status = ok
+sram_rand_ns_per_item = 147.05
+sram_rand_first_ns_per_item = 146.85
+sram_rand_spread_pct = 0.0
+sram_rand_checksum = 0xDB4BD000
+psram128k_words = 32768
+psram128k_addr = 0x3D800A0C
+psram128k_tier = PSRAM
+psram128k_balance = ok
+psram128k_seq_status = ok
+psram128k_seq_ns_per_item = 72.65
+psram128k_seq_first_ns_per_item = 82.74
+psram128k_seq_spread_pct = 0.4
+psram128k_seq_checksum = 0xDB4BD000
+psram128k_rand_status = ok
+psram128k_rand_ns_per_item = 486.18
+psram128k_rand_first_ns_per_item = 485.69
+psram128k_rand_spread_pct = 0.0
+psram128k_rand_checksum = 0xDB4BD000
+psram1m_words = 262144
+psram1m_addr = 0x3D800A0C
+psram1m_tier = PSRAM
+psram1m_balance = ok
+psram1m_seq_status = ok
+psram1m_seq_ns_per_item = 72.50
+psram1m_seq_first_ns_per_item = 72.24
+psram1m_seq_spread_pct = 0.0
+psram1m_seq_checksum = 0x04AF8000
+psram1m_rand_status = ok
+psram1m_rand_ns_per_item = 571.96
+psram1m_rand_first_ns_per_item = 571.96
+psram1m_rand_spread_pct = 0.0
+psram1m_rand_checksum = 0x04AF8000
+flash128k_words = 32768
+flash128k_addr = 0x3C040000
+flash128k_tier = FLASH
+flash128k_balance = ok
+flash128k_seq_status = ok
+flash128k_seq_ns_per_item = 151.17
+flash128k_seq_first_ns_per_item = 151.26
+flash128k_seq_spread_pct = 0.0
+flash128k_seq_checksum = 0xFFFF8000
+flash128k_rand_status = ok
+flash128k_rand_ns_per_item = 953.06
+flash128k_rand_first_ns_per_item = 952.51
+flash128k_rand_spread_pct = 0.0
+flash128k_rand_checksum = 0xFFFF8000
+flash1m_words = 262144
+flash1m_addr = 0x3C040000
+flash1m_tier = FLASH
+flash1m_balance = ok
+flash1m_seq_status = ok
+flash1m_seq_ns_per_item = 151.16
+flash1m_seq_first_ns_per_item = 150.42
+flash1m_seq_spread_pct = 0.0
+flash1m_seq_checksum = 0xFFFC0000
+flash1m_rand_status = ok
+flash1m_rand_ns_per_item = 1182.31
+flash1m_rand_first_ns_per_item = 1182.27
+flash1m_rand_spread_pct = 0.0
+flash1m_rand_checksum = 0xFFFC0000
+control_noload_status = ok
+control_noload_ns_per_item = 130.19
+control_noload_first_ns_per_item = 130.20
+control_noload_spread_pct = 0.0
+control_noload_checksum = 0xFFFE0000
+=== END ===

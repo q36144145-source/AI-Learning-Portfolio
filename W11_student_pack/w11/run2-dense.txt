@@ -1,0 +1,86 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+
+=== W11 REPORT ===
+sketch               = 2_dense
+cpu_mhz              = 240
+repeats              = 5
+spread_max_pct       = 25
+min_cycles           = 20000
+dcache_bytes         = 32768
+line_bytes           = 32
+psram_found_api      = 1
+psram_bytes          = 8388607
+internal_largest     = 327668
+n_in                 = 256
+n_out                = 128
+macs_per_inference   = 32768
+weights_bytes_f32    = 131072
+weights_bytes_s8     = 32768
+scale_bytes_s8       = 4
+scale_w              = 7.873883471e-03
+scale_x              = 7.856190205e-03
+table_check          = ok
+f32_flash_addr = 0x3C038CE8
+f32_flash_tier = FLASH
+f32_flash_status = ok
+f32_flash_ns_per_item = 151.21
+f32_flash_first_ns_per_item = 151.32
+f32_flash_spread_pct = 0.2
+f32_flash_checksum = 0x5B5980CE
+f32_flash_us_per_inference = 4954.7
+s8_flash_addr = 0x3C030CE8
+s8_flash_tier = FLASH
+s8_flash_status = ok
+s8_flash_ns_per_item = 38.05
+s8_flash_first_ns_per_item = 53.14
+s8_flash_spread_pct = 0.6
+s8_flash_checksum = 0x986D176A
+s8_flash_us_per_inference = 1246.8
+f32_sram_addr = 0x3FC979A0
+f32_sram_tier = SRAM
+f32_sram_status = ok
+f32_sram_ns_per_item = 25.51
+f32_sram_first_ns_per_item = 25.51
+f32_sram_spread_pct = 0.9
+f32_sram_checksum = 0x5B5980CE
+f32_sram_us_per_inference = 835.9
+s8_sram_addr = 0x3FC979A0
+s8_sram_tier = SRAM
+s8_sram_status = ok
+s8_sram_ns_per_item = 37.91
+s8_sram_first_ns_per_item = 37.91
+s8_sram_spread_pct = 0.6
+s8_sram_checksum = 0x986D176A
+s8_sram_us_per_inference = 1242.3
+f32_psram_addr = 0x3D800A0C
+f32_psram_tier = PSRAM
+f32_psram_status = ok
+f32_psram_ns_per_item = 68.05
+f32_psram_first_ns_per_item = 74.01
+f32_psram_spread_pct = 0.4
+f32_psram_checksum = 0x5B5980CE
+f32_psram_us_per_inference = 2229.7
+s8_psram_addr = 0x3D800A0C
+s8_psram_tier = PSRAM
+s8_psram_status = ok
+s8_psram_ns_per_item = 38.01
+s8_psram_first_ns_per_item = 46.56
+s8_psram_spread_pct = 0.7
+s8_psram_checksum = 0x986D176A
+s8_psram_us_per_inference = 1245.5
+f32_outputs_identical = ok
+s8_outputs_identical  = ok
+quant_rms_err         = 0.027620
+quant_rms_ref         = 5.051328
+quant_rel_rms_err_pct = 0.5468
+quant_max_abs_err     = 0.066963
+quant_half_step_w     = 3.936942e-03
+=== END ===
