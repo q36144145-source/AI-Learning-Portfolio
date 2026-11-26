@@ -2,7 +2,7 @@
 
 格式同每週：**what I asked · what it answered · how I checked · what I changed**。
 前兩則是課程要求的兩則（範本 `AI_USAGE_template.md`），第三則揭露 Claude Code 在這週實驗中的實質參與（課綱 §11）。
-實驗在 2026-11-26 完成（線上週，晚於 25 Nov 的期限）。
+實驗在 2026-11-26 完成。文件上寫的是 19 Nov 上課、25 Nov 截止，課程實際改在 26 Nov 進行，改成在家完成。
 
 ---
 
